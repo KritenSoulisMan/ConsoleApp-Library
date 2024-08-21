@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rmatv\\source\\repos\\Library\\",
+  "WorkspaceRootPath": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\ConsoleApp-Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B5F8A2E-5348-4E1F-B2AA-BD1720049A25}|Library.csproj|c:\\users\\rmatv\\source\\repos\\library\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6B5F8A2E-5348-4E1F-B2AA-BD1720049A25}|Library.csproj|c:\\users\\rmatv\\onedrive\\dokumente\\github\\consoleapp-library\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B5F8A2E-5348-4E1F-B2AA-BD1720049A25}|Library.csproj|solutionrelative:library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B5F8A2E-5348-4E1F-B2AA-BD1720049A25}|Library.csproj|c:\\users\\rmatv\\source\\repos\\library\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6B5F8A2E-5348-4E1F-B2AA-BD1720049A25}|Library.csproj|c:\\users\\rmatv\\onedrive\\dokumente\\github\\consoleapp-library\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B5F8A2E-5348-4E1F-B2AA-BD1720049A25}|Library.csproj|solutionrelative:book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B5F8A2E-5348-4E1F-B2AA-BD1720049A25}|Library.csproj|c:\\users\\rmatv\\source\\repos\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6B5F8A2E-5348-4E1F-B2AA-BD1720049A25}|Library.csproj|c:\\users\\rmatv\\onedrive\\dokumente\\github\\consoleapp-library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B5F8A2E-5348-4E1F-B2AA-BD1720049A25}|Library.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,22 +28,21 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\rmatv\\source\\repos\\Library\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\ConsoleApp-Library\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\rmatv\\source\\repos\\Library\\Program.cs",
+              "ToolTip": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\ConsoleApp-Library\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T11:35:20.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T11:35:20.708Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\rmatv\\source\\repos\\Library\\Book.cs",
+              "DocumentMoniker": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\ConsoleApp-Library\\Book.cs",
               "RelativeDocumentMoniker": "Book.cs",
-              "ToolTip": "C:\\Users\\rmatv\\source\\repos\\Library\\Book.cs",
+              "ToolTip": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\ConsoleApp-Library\\Book.cs",
               "RelativeToolTip": "Book.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -54,11 +53,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Library.cs",
-              "DocumentMoniker": "C:\\Users\\rmatv\\source\\repos\\Library\\Library.cs",
+              "DocumentMoniker": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\ConsoleApp-Library\\Library.cs",
               "RelativeDocumentMoniker": "Library.cs",
-              "ToolTip": "C:\\Users\\rmatv\\source\\repos\\Library\\Library.cs",
+              "ToolTip": "C:\\Users\\rmatv\\OneDrive\\Dokumente\\GitHub\\ConsoleApp-Library\\Library.cs",
               "RelativeToolTip": "Library.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAowBEAAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowCsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-12T11:39:00.735Z",
               "EditorCaption": ""

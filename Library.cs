@@ -33,9 +33,22 @@ namespace Library
             Books.Add(book);
         }
 
-        public void RemnoveBook()
+        public void RemoveBook()
         {
-            Console.WriteLine("В разработке...");
+            int n = int.Parse(Console.ReadLine());
+            Books[b].title;
+
+            switch (n)
+            {
+                case 0:
+                    Console.WriteLine();    
+                    Console.WriteLine("Книга '" + title + "' была удалена");
+                    break;
+                case 1:
+                    Console.WriteLine("Все книги были удалены!");
+                    Books.Clear(); // Очистить весь массив.
+                    break;
+            }
         }
 
         public void ShowBook()
