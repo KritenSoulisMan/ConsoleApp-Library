@@ -36,13 +36,12 @@ namespace Library
         public void RemoveBook()
         {
             int n = int.Parse(Console.ReadLine());
-            Books[b].title;
+            //Books[b].title;
 
             switch (n)
             {
-                case 0:
-                    Console.WriteLine();    
-                    Console.WriteLine("Книга '" + title + "' была удалена");
+                case 0: 
+                    Console.WriteLine("Книга '" + /*title +*/ "' была удалена");
                     break;
                 case 1:
                     Console.WriteLine("Все книги были удалены!");
