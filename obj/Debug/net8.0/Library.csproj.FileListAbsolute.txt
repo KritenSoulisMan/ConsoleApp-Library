@@ -27,3 +27,17 @@ C:\Users\rmatv\OneDrive\Dokumente\GitHub\ConsoleApp-Library\obj\Debug\net8.0\ref
 C:\Users\rmatv\OneDrive\Dokumente\GitHub\ConsoleApp-Library\obj\Debug\net8.0\Library.pdb
 C:\Users\rmatv\OneDrive\Dokumente\GitHub\ConsoleApp-Library\obj\Debug\net8.0\Library.genruntimeconfig.cache
 C:\Users\rmatv\OneDrive\Dokumente\GitHub\ConsoleApp-Library\obj\Debug\net8.0\ref\Library.dll
+C:\Users\S111\Desktop\ConsoleApp-Library-main\bin\Debug\net8.0\Library.exe
+C:\Users\S111\Desktop\ConsoleApp-Library-main\bin\Debug\net8.0\Library.deps.json
+C:\Users\S111\Desktop\ConsoleApp-Library-main\bin\Debug\net8.0\Library.runtimeconfig.json
+C:\Users\S111\Desktop\ConsoleApp-Library-main\bin\Debug\net8.0\Library.dll
+C:\Users\S111\Desktop\ConsoleApp-Library-main\bin\Debug\net8.0\Library.pdb
+C:\Users\S111\Desktop\ConsoleApp-Library-main\obj\Debug\net8.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\S111\Desktop\ConsoleApp-Library-main\obj\Debug\net8.0\Library.AssemblyInfoInputs.cache
+C:\Users\S111\Desktop\ConsoleApp-Library-main\obj\Debug\net8.0\Library.AssemblyInfo.cs
+C:\Users\S111\Desktop\ConsoleApp-Library-main\obj\Debug\net8.0\Library.csproj.CoreCompileInputs.cache
+C:\Users\S111\Desktop\ConsoleApp-Library-main\obj\Debug\net8.0\Library.dll
+C:\Users\S111\Desktop\ConsoleApp-Library-main\obj\Debug\net8.0\refint\Library.dll
+C:\Users\S111\Desktop\ConsoleApp-Library-main\obj\Debug\net8.0\Library.pdb
+C:\Users\S111\Desktop\ConsoleApp-Library-main\obj\Debug\net8.0\Library.genruntimeconfig.cache
+C:\Users\S111\Desktop\ConsoleApp-Library-main\obj\Debug\net8.0\ref\Library.dll

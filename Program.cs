@@ -4,9 +4,33 @@ namespace Library
 {
     class Program
     {
-        List<Book> Books = new List<Book>();
+        static List<Book> Books = new List<Book>();
+        static List<Reader> Readers = new List<Reader>();
 
         static void Main()
+        {
+            while (true)
+            {
+                Console.WriteLine("Выберите пункт: \n" +
+                    "1. Управление книгами.\n" +
+                    "2. Управление пользователями.\n");
+
+                int n = int.Parse(Console.ReadLine());
+                switch (n)
+                {
+                    case 1:
+                        Console.Clear();
+                        SwitchParamsBooks();
+                        break;
+                    case 2:
+                        Console.Clear();
+                        SwitchParamsReader();
+                        break;
+                }
+            }
+        }
+
+        static void SwitchParamsBooks()
         {
             while (true)
             {
@@ -15,22 +39,57 @@ namespace Library
                     "2. Список книг.\n" +
                     "3. Удалить книгу.");
 
-                switch (int.Parse(Console.ReadLine()))
+                int a = int.Parse(Console.ReadLine());
+                switch (a)
                 {
                     case 1:
+                        Console.Clear();
                         AddBook();
                         break;
                     case 2:
+                        Console.Clear();
                         ShowBook();
                         break;
                     case 3:
+                        Console.Clear();
                         RemoveBook();
                         break;
                 }
             }
         }
 
-        void AddBook()
+        static void SwitchParamsReader()
+        {
+            while (true)
+            {
+                Console.WriteLine("Выберите пункт: \n" +
+                    "1. Добавить пользователя.\n" +
+                    "2. Список пользователей.\n" +
+                    "3. Удалить пользователя.");
+
+                int b = int.Parse(Console.ReadLine());
+                switch (b)
+                {
+                    case 1:
+                        Console.Clear();
+                        AddReader();
+                        break;
+                    case 2:
+                        Console.Clear();
+                        ShowReader();
+                        break;
+                    case 3:
+                        Console.Clear();
+                        RemoveReader();
+                        break;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Блок для управления Книгами
+        /// </summary>
+        static void AddBook()
         {
             Console.WriteLine("Какое название у книги?");
             string title = Console.ReadLine();
@@ -53,7 +112,35 @@ namespace Library
             Books.Add(book);
         }
 
-        void RemoveBook()
+        static void ShowBook()
+        {
+            if (Books.Count == 0)
+            {
+                Console.WriteLine("Кажись ещё не написали книг...");
+                return;
+            }
+            // Выбор 1 эл. из всего списка и замена имени книги
+            // Books[Books.Count - 1].Title = title;
+
+            // Массив начинает счёт с 0!
+            // Console.WriteLine(Books[0].Title); 
+
+            Console.WriteLine("Список книг: ");
+            // Цикл для вывода списка
+            for (int i = 0; i < Books.Count; i++)
+            {
+                int num = i;
+                Console.WriteLine($"Книга под номером: {num} \n" +
+            $"Название книги: {Books[i].Title}. \n" +
+            $"Автор книги: {Books[i].Author}. \n" +
+            $"Описание книги: {Books[i].Description}. \n" +
+            $"Кол-во страниц в книге: {Books[i].Pages}стр. \n" +
+            $"Жанр книги: {Books[i].Genre}. \n");
+            }
+
+        }
+
+        static void RemoveBook()
         {
             if (Books.Count != 0)
             {
@@ -81,6 +168,7 @@ namespace Library
                                 break;
 
                             case "Нет" or "нет":
+                                Console.Clear();
                                 Main();
                                 break;
                         }
@@ -98,32 +186,86 @@ namespace Library
             }
         }
 
-        void ShowBook()
+        /// <summary>
+        /// Блок для управления пользователями
+        /// </summary>
+        
+        static void AddReader()
         {
-            if (Books.Count == 0)
+            int ID = Books.Count + 1;
+            Console.WriteLine("Введите имя пользователя: ");
+            string Name = Console.ReadLine();
+            Console.WriteLine("Введите почту пользователя: ");
+            string Mail = Console.ReadLine();
+            var reader = new Reader(ID, Name, Mail);
+
+            Console.WriteLine("Список пользователей очищен.");
+            Readers.Add(reader);
+        }
+
+        static void ShowReader()
+        {
+            if (Readers.Count == 0)
             {
-                Console.WriteLine("Кажись ещё не написали книг...");
+                Console.WriteLine("Здесь есть кто?");
                 return;
             }
-            // Выбор 1 эл. из всего списка и замена имени книги
-            // Books[Books.Count - 1].Title = title;
-
-            // Массив начинает счёт с 0!
-            // Console.WriteLine(Books[0].Title); 
-
-            Console.WriteLine("Список книг: ");
-            // Цикл для вывода списка
-            for (int i = 0; i < Books.Count; i++)
+            
+            Console.WriteLine("Список пользователей: ");
+            for (int i = 0; i < Readers.Count; i++)
             {
                 int num = i;
-                Console.WriteLine($"Книга под номером: {num} \n" +
-            $"Название книги: {Books[i].Title}. \n" +
-            $"Автор книги: {Books[i].Author}. \n" +
-            $"Описание книги: {Books[i].Description}. \n" +
-            $"Кол-во страниц в книге: {Books[i].Pages}стр. \n" +
-            $"Жанр книги: {Books[i].Genre}. \n");
+                Console.WriteLine($"ID: {num} \n" +
+            $"Никнейм: {Readers[i].Name}. \n" +
+            $"Почта: {Readers[i].Mail}. \n");
             }
+        }
 
+        static void RemoveReader()
+        {
+            if (Readers.Count != 0)
+            {
+                for (int i = 0; i < Readers.Count; i++)
+                {
+                    Console.WriteLine($"ID: {Readers[i].ID}");
+                }
+
+                Console.WriteLine("Сколько Пользователей желаете удалить?\n" +
+                    "1. Несколько." +
+                    "2. Всех.");
+
+                switch (int.Parse(Console.ReadLine()))
+                {
+                    case 1:
+                        Console.Write("Напишите ID пользователя из списка: ");
+                        int a = int.Parse(Console.ReadLine());
+                        Readers.RemoveAt(a);
+                        Console.WriteLine("Пользователь был удален");
+                        Console.WriteLine("Хотите продолжить? (Да/Нет)");
+                        switch (Console.ReadLine())
+                        {
+                            case "Да" or "да":
+                                RemoveBook();
+                                break;
+
+                            case "Нет" or "нет":
+                                Main();
+                                break;
+                        }
+                        break;
+                    case 2:
+                        Console.WriteLine("Все Пользователи были удалены!");
+                        Readers.Clear(); // Очистить весь массив.
+                        Console.Clear();
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("В данный момент нету новых регистраций... " +
+                    "Приходите завтра.");
+                Console.Clear();
+            }
         }
     }
 
@@ -143,6 +285,20 @@ namespace Library
             this.Description = Description;
             this.Pages = Pages;
             this.Genre = Genre;
+        }
+    }
+
+    class Reader
+    {
+        public int ID;
+        public string Name;
+        public string Mail;
+
+        public Reader(int ID, string Name, string Mail)
+        {
+            this.ID = ID;
+            this.Name = Name;
+            this.Mail = Mail;
         }
     }
 }
